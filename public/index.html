@@ -1,54 +1,24 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>랜덤 이름 생성기</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="container">
-      <header class="header">
-        <h1 class="title">랜덤 이름 생성기</h1>
-        <p class="subtitle">성별을 고르고, 원하면 성(姓)도 함께 생성해보세요.</p>
-      </header>
 
-      <section class="controls" aria-label="이름 생성 옵션">
-        <div class="control-group">
-          <h2 class="control-title">성별</h2>
-          <div class="segmented" role="group" aria-label="성별 선택">
-            <button id="maleBtn" class="segmented-btn" data-gender="male" aria-pressed="false">남자</button>
-            <button id="femaleBtn" class="segmented-btn" data-gender="female" aria-pressed="false">여자</button>
-          </div>
+<html>
+    <head>
+        <title>이름 생성기</title>
+        
+    </head>
+    <body>
+        <div>
+            <h1>'랜덤 이름 생성기 '</h1>
+            <h2>성별</h2>
+            <button>남자</button>
+            <button>여자</button>
+            <h2>이름 + 성</h2>
+            <button>생성하기</button>
         </div>
-
-        <div class="control-group inline">
-          <h2 class="control-title">이름 + 성</h2>
-          <label class="checkbox">
-            <input id="includeSurname" type="checkbox" checked />
-            <span>성 포함</span>
-          </label>
+        
+        <div>
+            <h1>김민찬</h1>
+            <h2>멋진 이름이군요.</h2>
+            <button>다시 생성하기</button>
         </div>
-
-        <div class="actions">
-          <button id="generateBtn" class="primary">생성하기</button>
-        </div>
-      </section>
-
-      <section id="resultCard" class="result hidden" aria-live="polite">
-        <h1 id="nameText" class="result-name">김민찬</h1>
-        <h2 id="complimentText" class="result-sub">멋진 이름이군요.</h2>
-        <div class="result-actions">
-          <button id="retryBtn" class="ghost">다시 생성하기</button>
-          <button id="copyBtn" class="secondary">복사</button>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <small>↩︎ Enter 키로도 생성할 수 있어요</small>
-      </footer>
-    </main>
-
-    <script src="script.js" defer></script>
-  </body>
+    </body>
 </html>
